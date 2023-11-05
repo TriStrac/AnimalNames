@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageBlockActivity">
+
+    <Button
+        android:id="@+id/managelockAnimalsBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="@+id/blockAnimalsList"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="85dp"
+        android:text="Manage Block Animals"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/managelockAnimalsBackButton"
+        app:layout_constraintEnd_toEndOf="@+id/blockAnimalsList"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/managelockAnimalsBackButton"
+        app:layout_constraintTop_toTopOf="@+id/managelockAnimalsBackButton" />
+
+    <ListView
+        android:id="@+id/blockAnimalsList"
+        android:layout_width="350dp"
+        android:layout_height="618dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+</androidx.constraintlayout.widget.ConstraintLayout>
